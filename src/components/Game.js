@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import Board from './Board';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Row, Col, Container } from 'react-bootstrap';
 
 
 export default function Game() {
@@ -29,19 +31,22 @@ export default function Game() {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <Button variant="light" className="btn" onClick={() => jumpTo(move)}>{description}</Button>
       </li>
     );
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
-      </div>
-    </div>
+    <Container>
+      <h1 className="title">Tic Tac Toe</h1>
+      <Row className="game">
+        <Col className="game-board">
+          <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        </Col>
+        <Col className="game-info">
+          <ol>{moves}</ol>
+        </Col>
+      </Row>
+    </Container>
   );
 }

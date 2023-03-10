@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Nunito:wght@400;500;600;700;800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -60,15 +62,23 @@ body {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 55px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 84px;
+  width: 84px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+}
+
+.X {
+  text-shadow: 2px 2px #ff00ee;
+}
+
+.O {
+  text-shadow: 2px 2px rgb(117, 156, 255);
 }
 
 .board-row:after {
@@ -87,4 +97,42 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+
+body {
+  background-image: url("./assets/background.gif");
+  background-color: #cccccc;
+  background-size: auto 100vh;
+  background-position: -200px 0;
+}
+
+.status {
+  color: white;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px #ff0000;
+  font-size: 50px;
+}
+
+ol {
+  color: white;
+  font-size: 45px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-shadow: 3px 3px #0062ff;
+}
+
+.btn {
+  box-shadow: 3px 3px #0062ff;
+  color: #0062ff;
+  font-weight: bold;
+  height: 50px;
 }

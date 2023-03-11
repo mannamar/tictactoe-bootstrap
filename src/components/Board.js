@@ -1,7 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 import Square from './Square';
-import Confetti from 'react-confetti'
+import Confetti from 'react-confetti';
 
 export default function Board({ xIsNext, squares, onPlay }) {
 

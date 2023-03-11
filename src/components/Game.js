@@ -43,7 +43,7 @@ export default function Game() {
         <Col className="game-board">
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         </Col>
-        <Col className="game-info">
+        <Col className="game-info d-flex flex-column align-items-center">
           <ol>{moves}</ol>
         </Col>
       </Row>
